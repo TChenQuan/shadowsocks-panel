@@ -1,9 +1,9 @@
 Shadowsocks Panel
 ===================
 
-一个比较简单的 ss panel
-采用全页面的 Ajax请求
-支持PHP7
+一个比较简单的 ss panel  
+采用全页面的 Ajax请求  
+支持PHP5.2 ~ 5.6 (需要php pdo支持)  
 
 ### 程序截图
 ![后台](https://static-2.loacg.com/open/static/ss-panel-github/Admin.png)
