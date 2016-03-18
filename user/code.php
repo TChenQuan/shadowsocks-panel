@@ -10,7 +10,7 @@ $c = new \Ss\User\Invite();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Suki.im SS Server - Sendya" />
 	<title>邀请码 - <?=$site_name?></title>
-    <link rel="stylesheet" href="//fonts.css.network/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/bootstrap.css">

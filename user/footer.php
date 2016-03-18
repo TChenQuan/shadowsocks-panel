@@ -22,6 +22,9 @@ if(!defined("SS_PATH")) exit('Access Denied');
 </footer>
 </div>
 </div>
+<!-- 
+<?php echo $res_url; ?>
+-->
 <!-- Bottom Scripts -->
 <script src="<?=$res_url?>assets/js/bootstrap.min.js"></script>
 <script src="<?=$res_url?>assets/js/TweenMax.min.js"></script>

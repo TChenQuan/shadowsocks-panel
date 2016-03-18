@@ -180,19 +180,19 @@ function ckAction($link){
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="<?php if(ckAction("actCard") || ckAction("buyCard")) echo 'active opened expanded '; ?>">
 						<a href="#">
 							<i class="linecons-paper-plane"></i>
 							<span class="title">账户续期</span>
 						</a>
 						<ul>
-							<li>
+							<li class="<?php if(ckAction("actCard")) echo 'active'; ?>">
 								<a href="/member/actCard">
 									<i class="entypo-flow-line"></i>
 									<span class="title">自助续期</span>
 								</a>
 							</li>
-							<li><a href="/member/buyCard">
+							<li class="<?php if(ckAction("buyCard")) echo 'active'; ?>"><a href="/member/buyCard">
 									<i class="entypo-flow-line"></i>
 									<span class="title">购买套餐卡</span>
 								</a>

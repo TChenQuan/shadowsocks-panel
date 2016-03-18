@@ -14,7 +14,7 @@ if(!defined("SS_PATH")) exit('Access Denied');
     <meta name="description" content="Suki.im SS Server - Sendya" />
     <title><?php echo $site_name;  ?></title>
 
-    <link rel="stylesheet" href="//fonts.css.network/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=$res_url?>assets/css/bootstrap.css">

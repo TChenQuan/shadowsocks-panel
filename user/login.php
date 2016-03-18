@@ -124,18 +124,18 @@ jQuery(jQuery("#register button")[0]).attr("disabled",true);$.ajax({url:"/action
 		</div>
 	</div>
 	<script>function showReg(){$("#login").hide(),$(".external-login").hide(),$("#register").show()}function hideReg(){$("#login").show(),$(".external-login").show(),$("#register").hide()}</script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/bootstrap.min.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/TweenMax.min.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/resizeable.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/joinable.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/xenon-api.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/xenon-toggles.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/xenon-widgets.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/devexpress-web-14.1/js/globalize.min.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/toastr/toastr.min.js"></script>
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/jquery-validate/jquery.validate.min.js"></script>
+	<script src="<?=$res_url?>assets/js/bootstrap.min.js"></script>
+	<script src="<?=$res_url?>assets/js/TweenMax.min.js"></script>
+	<script src="<?=$res_url?>assets/js/resizeable.js"></script>
+	<script src="<?=$res_url?>assets/js/joinable.js"></script>
+	<script src="<?=$res_url?>assets/js/xenon-api.js"></script>
+	<script src="<?=$res_url?>assets/js/xenon-toggles.js"></script>
+	<script src="<?=$res_url?>assets/js/xenon-widgets.js"></script>
+	<script src="<?=$res_url?>assets/js/devexpress-web-14.1/js/globalize.min.js"></script>
+	<script src="<?=$res_url?>assets/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
+	<script src="<?=$res_url?>assets/js/toastr/toastr.min.js"></script>
+	<script src="<?=$res_url?>assets/js/jquery-validate/jquery.validate.min.js"></script>
 	<!-- JavaScripts initializations and stuff -->
-	<script src="//static-2.loacg.com/open/static/ss/assets/js/xenon-custom.js"></script>
+	<script src="<?=$res_url?>assets/js/xenon-custom.js"></script>
 </body>
 </html>

@@ -93,8 +93,8 @@ $exttime = date("Y-m-d H:i:s",$U->ExpireDate());
 						<div class="chart-label chart-label-small">
 							<div class="h4 text-purple text-bold" data-count="this" data-from="0.00" data-to="<?php echo number_format( (($ssmin->onlineUserCount(10)+10) / $ssmin->allUserCount()) * 100, 2);?>" data-suffix="%" data-duration="1.5">0.00%</div>
 							<span class="text-small text-upper text-muted">在线人数百分比</span><br />
-							<span class="text-small text-upper text-muted">注册用户：<code> <?php echo $ssmin->allUserCount()+15;?> </code><br/>签到人数：<code> <?php echo $ssmin->CheckInUser(3600*24)+10;?> </code><br /></span>
-							<span class="text-small text-upper text-muted">实时在线：<code> <?php echo $ssmin->onlineUserCount(10)+10;?> </code><br />
+							<span class="text-small text-upper text-muted">注册用户：<code> <?php echo $ssmin->allUserCount();?> </code><br/>签到人数：<code> <?php echo $ssmin->CheckInUser(3600*24);?> </code><br /></span>
+							<span class="text-small text-upper text-muted">实时在线：<code> <?php echo $ssmin->onlineUserCount(10);?> </code><br />
 
 						</div>
 						<div id="server-uptime-chart" style="height: 134px;"></div>
@@ -156,6 +156,6 @@ $exttime = date("Y-m-d H:i:s",$U->ExpireDate());
 
 <script>$(document).ready(function(){$("#checkin").click(function(){$("#checkin").val("请稍等");showToastr("正在请求签到..请稍等",0,1500);$("#checkin").addClass("disabled");$.ajax({type:"GET",url:"/action/checkin",dataType:"json",success:function(result){showToastr(result.msg,0);$("#checkin").hide();$("#checkin-tag").hide();$("#checkinoff").show();$("#checkinoff-tag").show();},error:function(jqXHR){showToastr("发生错误："+jqXHR.status,0);}})});$("#updatePlan").click(function(){$.ajax({type:"GET",url:"/action/plan_update",dataType:"json",success:function(data){if(data.error){showToastr(data.msg,0);}else{showToastr(data.msg,0);}},error:function(jqXHR){showToastr("发生错误："+jqXHR.status,0);}})});$("#showpwd").click(function(){if($(this).html()=="<b>点击显示密码</b>"){$(this).html("<?php echo $oo->get_pass();?>");}else{$(this).html("<b>点击显示密码</b>");}});showToastr("您的上次续费时间：<?php echo date('Y-m-d H:i:s',$U->PayDate());?>\<br/\>您的账户到期时间：<?php echo $exttime;?>",800);$("#planList").click(function(){
     jQuery('#modal-1 .modal-body').html('套餐等级如下(套餐时间单位：每月)<br /><br />套餐A： 5GB(免费) (体验服务)<br />套餐B： 100GB(15RMB)<br />套餐C： 200GB(25RMB)<br />套餐D： 500GB(40RMB)<br />套餐VIP：请质询站长(\<del\>让站长肛一回送VIP\<\/del\><br /><br />套餐购买地址(taobao)：\<a href="http://t.cn/RUHq4UW" target="_blank"\ style="color:#F00;">进入购买页面\</a\>');jQuery('#modal-1').modal('show', {backdrop: 'fade'});
-});$.get("/openapi/ip",{action: "country"}, function(data){$("#country_id").html(data.retData.province + " " + data.retData.country)},"json"); showToastr("CN2 线路已恢复正常。感谢您的支持！",0,5000);});
+});$.get("/openapi/ip",{action: "country"}, function(data){$("#country_id").html(data.retData.province + " " + data.retData.country)},"json"); showToastr("线路已恢复正常。感谢您的支持！",0,5000);});
 </script>
 <?php require_once 'footer.php';?>
