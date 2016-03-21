@@ -30,7 +30,6 @@ pid       message           add_time        hot             type
 
 ### 程序截图
 ![充值界面](http://static-2.loacg.com/open/static/ss-panel-github/actCard.png)
-![后台](https://static-2.loacg.com/open/static/ss-panel-github/Admin.png)
 ![前台](https://static-2.loacg.com/open/static/ss-panel-github/member.png)
 ![前台](https://static-2.loacg.com/open/static/ss-panel-github/member2.png)
 ![前台](https://static-2.loacg.com/open/static/ss-panel-github/member3.png)
