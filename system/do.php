@@ -16,6 +16,7 @@ $version   ="2.5.7";
 
 //set timezone
 date_default_timezone_set('PRC');
+@ini_set('display_errors', 'off');
 
 //Using Mysqli
 $dbc = new mysqli(DB_HOST,DB_USER,DB_PWD,DB_DBNAME);

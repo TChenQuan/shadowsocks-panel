@@ -47,7 +47,7 @@ switch($action) {
 			$data['msg'] = "昵称太短，至少2中文字或6个英文";
 		}elseif($c->IsUsernameUsed($name)){
 			$data['msg'] = "昵称已经被使用";
-		}else{
+		}else {
 			// get value
 			$ref_by = $code->GetCodeUser();
 			$passwd = \Ss\User\Comm::SsPW($passwd);
@@ -129,7 +129,8 @@ $HtmlMain = <<<EOF
 		</td>
 	</tr>
 </tbody></table>
-EOF;		
+EOF;
+            
 		}
 		break;
     case 'checkin':
@@ -454,7 +455,7 @@ EOF;
 
             // 更新账户数据 并且删除 or 禁用此卡
             $Card->destroyCard($act_card); // 禁用此卡
-            $data['msg'] = "激活成功，您已激活 “" + $remark + "”";
+            $data['msg'] = "激活成功，您已激活 “" . $remark . "”";
             $data['error'] = 1;
         }
         break;

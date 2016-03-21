@@ -1,4 +1,5 @@
 <?php
+if (!file_exists('../system/config.php')) die('<b>no config file</b>');
 require_once '../system/config.php';
 //$core->isLogin(true);
 

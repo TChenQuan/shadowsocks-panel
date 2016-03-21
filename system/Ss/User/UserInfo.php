@@ -78,7 +78,7 @@ class UserInfo {
         $this->db->update("user",[
                 "paytime" => $payTime,
                 "expire_date[+]" => $expire_date,
-                "remark" => "付费用户(" + $type + ")"
+                "remark" => "付费用户(" . $type . ")"
             ],[
                 "uid" => $this->uid
             ]);
@@ -89,7 +89,7 @@ class UserInfo {
                 "paytime" => $payTime,
                 "expire_date" => 2145888000,
                 "transfer_enable" => $transfer_enable,
-                "remark" => "付费用户(" + $type + ")"
+                "remark" => "付费用户(" . $type . ")"
             ],[
                 "uid" => $this->uid
             ]);
