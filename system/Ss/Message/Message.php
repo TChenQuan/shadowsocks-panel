@@ -18,4 +18,17 @@ class Message {
          return $msg_array;
     }
 
+    // --TODO 成为我的rbq把 骚年！- 2016-03-21 t, next time.... long time
+    function addMessage(){
+
+    }
+
+    function editMessage(){
+
+    }
+
+    function deleteMessage(){
+
+    }
+
 }
