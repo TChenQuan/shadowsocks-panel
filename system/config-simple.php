@@ -32,6 +32,8 @@ $user_invite_max = '0';//最高邀请数
 //name
 $site_name = "SS Cat";
 $site_url  = "https://panel.com/";
+$res_url = "//static-2.loacg.com/open/static/ss/"; // 用于cdn静态资源时
+
 /**
  * 站点盐值，用于加密密码
  * 第一次安装请修改此值，安装后请勿修改！！否则会使所有密码失效，仅限加密方式不为1的时候有效
