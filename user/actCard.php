@@ -77,7 +77,7 @@ require_once './_header.php';
                 url:"/action/actCard",
                 data: {"act_card": $("#act_card").val()},
                 dataType:"json",
-                uccess:function(data){
+                success:function(data){
                     if(data.error){
                         showToastr(data.msg, 0);
                         $("#outtime_sp").html(data.extime);
