@@ -74,6 +74,27 @@ class UserInfo {
         ]);
     }
 
+    function updatePayDate($payTime, $expire_date, $type){
+        $this->db->update("user",[
+                "paytime" => $payTime,
+                "expire_date[+]" => $expire_date,
+                "remark" => "付费用户(" + $type + ")"
+            ],[
+                "uid" => $this->uid
+            ]);
+    }
+
+    function updateFlowAndTime($payTime, $transfer_enable, $type){
+        $this->db->update("user",[
+                "paytime" => $payTime,
+                "expire_date" => 2145888000,
+                "transfer_enable" => $transfer_enable,
+                "remark" => "付费用户(" + $type + ")"
+            ],[
+                "uid" => $this->uid
+            ]);
+    }
+
     function Money(){
         return $this->UserArray()['money'];
     }

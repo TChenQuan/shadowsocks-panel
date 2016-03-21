@@ -4,7 +4,7 @@ namespace Ss\Message;
 
 class Message {
 
-	   public  $id;
+	 public  $id;
      public  $db;
 
      function __construct($id=0){
@@ -13,9 +13,9 @@ class Message {
          $this->db  = $db;
      }
 
-		 function MessageArray(){
+	function MessageArray(){
          $msg_array = $this->db->select("ss_msg","*", "where enable=1 order by pid desc");
          return $msg_array;
-     }
+    }
 
 }

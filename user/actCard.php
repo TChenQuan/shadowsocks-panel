@@ -41,7 +41,7 @@ require_once './_header.php';
 					</div>
                     <div class="form-group">
                         <label for="cate_title">套餐卡/使用卡激活：</label>
-                        <input class="form-control" id="invite_num" value="0">
+                        <input class="form-control" id="invite_num" value="" placeholder="请输入您的卡号">
                     </div>
 				</div>
                 <div class="box-footer">
@@ -52,7 +52,7 @@ require_once './_header.php';
     </div>
 <script>
     $(function(){
-        $("#checkExTime").click(function(){
+        $("#checkExTime").on('click', function(){
             $.ajax({
                 type:"POST",
                 url:"/action/checkExpireDate",
@@ -61,17 +61,34 @@ require_once './_header.php';
                     if(data.error){
                         showToastr(data.msg, 0);
                         $("#outtime_sp").html(data.extime);
-                        //window.location.reload();
                     }else{
                         showToastr(data.msg, 0);
-                        //刷新页面
-                        //window.location.reload();
                     }
                 },
                 error:function(jqXHR){
                     showToastr("发生错误："+jqXHR.status, 0);
                 }
-            })
+            });
+        });
+
+        $("#submit").on('click', function(){
+            $.ajax({
+                type: "POST",
+                url:"/action/actCard",
+                data: {"act_card": $("#act_card").val()},
+                dataType:"json",
+                uccess:function(data){
+                    if(data.error){
+                        showToastr(data.msg, 0);
+                        $("#outtime_sp").html(data.extime);
+                    }else{
+                        showToastr(data.msg, 0);
+                    }
+                },
+                error:function(jqXHR){
+                    showToastr("发生错误："+jqXHR.status, 0);
+                }
+            });
         });
     });
 </script>
